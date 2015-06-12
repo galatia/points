@@ -1,0 +1,36 @@
+html {
+  background: url(/sunset_from_balcony.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.container, .item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.item {
+  flex: 1 0 0vmin;
+  flex-direction: column;
+}
+
+p {
+  color: white;
+  text-shadow: 0px 0px 10vmin #474747;
+  font-size: 50vmin;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
