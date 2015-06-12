@@ -1,0 +1,16 @@
+<head>
+  <title>POINTS</title>
+</head>
+
+<body>
+  {{> points person='e'}}
+  {{> points person='d'}}
+</body>
+
+<template name="points">
+  <div>
+    <button class="inc"></button>
+    <p>{{points}}</p>
+    <button class="dec"></button>
+  </div>
+</template>
