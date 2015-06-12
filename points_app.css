@@ -1,9 +1,5 @@
 html {
-  background: url(/sunset_from_balcony.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: white;
 }
 
 html, body {
@@ -30,8 +26,8 @@ body, .container, .item{
 }
 
 p {
-  color: white;
-  text-shadow: 0px 0px 10vmin #474747;
+  color: black;
+  text-shadow: 0px 0px 10vmin #969696;
   font-size: 50vmin;
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -59,6 +55,6 @@ p {
 
 span.icon {
   font-family: 'Glyphicons Halflings';
-  color: white;
+  color: black;
   font-size: 10vmin;
 }
