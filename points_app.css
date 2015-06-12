@@ -12,9 +12,10 @@ html, body {
 
 .container {
   height: 100%;
+  max-width: 60%;
 }
 
-.container, .item{
+body, .container, .item{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +26,7 @@ html, body {
 .item {
   flex: 1 0 0vmin;
   flex-direction: column;
+  margin: 0 10vmin;
 }
 
 p {

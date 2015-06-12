@@ -3,22 +3,11 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 
-<body class="container">
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  {{> points person='e'}}
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  {{> points person='d'}}
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
-  <div class="item spacer"></div>
+<body>
+  <div class="container">
+    {{> points person='e'}}
+    {{> points person='d'}}
+  </div>
 </body>
 
 <template name="points">
