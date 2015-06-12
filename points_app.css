@@ -20,7 +20,7 @@ body, .container, .item{
 }
 
 .item {
-  flex: 1 0 0vmin;
+  flex: 1 0 auto;
   flex-direction: column;
   margin: 0 10vmin;
 }
