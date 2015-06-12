@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Points",
+  "version": "0.0.1",
+  "description": "Points app as the new tab page",
+  "permissions": ["tabs"],
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  }
+}
