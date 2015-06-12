@@ -8,12 +8,21 @@ if (Meteor.isClient) {
     }
   });
 
+  function inc(person,delta) {
+    Points.update(Points.findOne({person: person})['_id'], {$inc: {points_count: delta}})
+  }
   Template.points.events({
-    'click .button.inc': function () {
-      Points.update(Points.findOne({person: this.person})['_id'], {$inc: {points_count: 1}})
+
+    'click .button.inc': function () { inc(this.person,1); },
+    'click .button.dec': function () { inc(this.person,-1); },
+
+    'touchend .button.inc': function(event) {
+      event.preventDefault();
+      inc(this.person,1);
     },
-    'click .button.dec': function () {
-      Points.update(Points.findOne({person: this.person})['_id'], {$inc: {points_count: -1}})
+    'touchend .button.dec': function(event) {
+      event.preventDefault();
+      inc(this.person,-1);
     }
   });
 }
