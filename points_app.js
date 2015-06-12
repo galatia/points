@@ -9,10 +9,10 @@ if (Meteor.isClient) {
   });
 
   Template.points.events({
-    'click button.inc': function () {
+    'click .button.inc': function () {
       Points.update(Points.findOne({person: this.person})['_id'], {$inc: {points_count: 1}})
     },
-    'click button.dec': function () {
+    'click .button.dec': function () {
       Points.update(Points.findOne({person: this.person})['_id'], {$inc: {points_count: -1}})
     }
   });
