@@ -4,10 +4,14 @@
 </head>
 
 <body>
-  <div class="container">
-    {{> points person='e'}}
-    {{> points person='d'}}
-  </div>
+  {{#if loggedIn}}
+    <div class="container">
+      {{> points person='e'}}
+      {{> points person='d'}}
+    </div>
+  {{else}}
+    {{> loginButtons }}
+  {{/if}}
 </body>
 
 <template name="points">
