@@ -1,10 +1,14 @@
 Accounts.config({restrictCreationByEmailDomain: function(email) {
-  emails = Meteor.settings.authorizedEmails
-  for(var i = 0; i < emails.length; i++) {
-    if(email === emails[i])
-      return true
+  emails = Meteor.settings && Meteor.settings.authorizedEmails
+  if(emails) {  //Check if there are any specified authorizedEmails
+    for(var i = 0; i < emails.length; i++) {
+      if(email === emails[i])
+        return true
+    }
+    return false
+  } else {
+    return true
   }
-  return false
 }})
 
 Points = new Mongo.Collection('points')
